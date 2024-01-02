@@ -1,0 +1,12 @@
+variables:
+  vmImageName: 'ubuntu-latest'
+  resourceGroupName: 'ptraillecrresourcegroup' # Needs to already exist
+  location: 'eastus'
+  templateFile: './main.bicep'
+  sourceFolder: 'quickstarts/microsoft.web/webapp-linux-managed-mysql/'
+
+trigger:
+- none
+
+pool:
+  vmImage: $(vmImageName)
