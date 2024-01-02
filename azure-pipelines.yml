@@ -16,7 +16,7 @@ name: Bicep deploy temlate
 steps: 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'ARM Linux Webapp'
+    azureSubscription: 'MyARMSubscription'
     scriptType: bash
     scriptLocation: inlineScript
     inlineScript: |
